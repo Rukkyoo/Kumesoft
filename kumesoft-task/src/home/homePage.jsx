@@ -2,8 +2,10 @@ import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineDesignServices } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaRegPaperPlane } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 import CountUp from "react-countup";
 
 const homePage = () => {
@@ -25,7 +27,7 @@ const homePage = () => {
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
             magna aliqua quis nostrud exerc.
           </p>
-          <button class="bg-blue-300 font-extrabold text-white w-48 py-2 px-4 rounded-full mt-4">
+          <button class="bg-blue-300 font-extrabold text-white w-48 py-2 px-4 rounded-full mt-4 hover:bg-blue-400 transition-all duration-300 ease-out">
             Discover Now
           </button>
         </div>
@@ -153,7 +155,7 @@ const homePage = () => {
                   placeholder="Enter your email address"
                   class="bg-slate-400 p-3 rounded-3xl"
                 />
-                <button class="bg-blue-500 text-white p-2 rounded-3xl text-sm flex flex-row gap-2 items-center">
+                <button class="bg-blue-500 text-white p-2 rounded-3xl text-sm flex flex-row gap-2 items-center hover:bg-blue-600 transition-all duration-300 ease-out">
                   <FaRegPaperPlane /> Subscribe
                 </button>
               </div>
@@ -219,7 +221,7 @@ const homePage = () => {
               Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
               aspernatur aut odit aut fugit sed quia.
             </p>
-            <button class="bg-blue-300 text-white px-8 py-2 mt-6 rounded-3xl">
+            <button class="bg-blue-300 text-white px-8 py-2 mt-6 rounded-3xl hover:bg-blue-900 transition-all duration-300 ease-out">
               Discover Now
             </button>
             <div class="grid grid-cols-2 gap-4 place-items-center mt-10">
@@ -257,32 +259,201 @@ const homePage = () => {
             <h4 class="text-2xl font-bold text-center">Latest articles</h4>
             <div class="overflow-x-auto flex gap-5 p-5 w-full">
               <div class="flex-shrink-0 flex flex-col items-center text-left w-84">
-                <img class="rounded-2xl w-72" src="/src/artman.jpg"/>
-                <p class="text-left">MEDIA SEO</p>
-                <p class="text-left">What's trending on designers' charts this spring</p>
-                <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                <img class="rounded-2xl w-72" src="/src/artman.jpg" />
+                <div class="p-5">
+                  <p class="text-left">MEDIA SEO</p>
+                  <p class="text-left">
+                    What's trending on designers' charts this spring
+                  </p>
+                  <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                </div>
               </div>
               <div class="flex-shrink-0 flex flex-col items-center text-center w-84">
-                <img class="rounded-2xl w-72" src="/src/artdesk.jpg"/>
-                <p class="text-left">MEDIA SEO</p>
-                <p class="text-left">Fresh startup ideas for your digital business</p>
-                <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                <img class="rounded-2xl w-72" src="/src/artdesk.jpg" />
+                <div class="p-5">
+                  {" "}
+                  <p class="text-left">MEDIA SEO</p>
+                  <p class="text-left">
+                    Fresh startup ideas for your digital business
+                  </p>
+                  <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                </div>
               </div>
               <div class="flex-shrink-0 flex flex-col items-center text-center w-84">
-                <img class="rounded-2xl w-72" src="/src/artwoman.jpg"/>
-                <p class="text-left">MEDIA SEO</p>
-                <p class="text-left">Top 5 targeting techniques to attract customers</p>
-                <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                <img class="rounded-2xl w-72" src="/src/artwoman.jpg" />
+                <div class="p-5">
+                  {" "}
+                  <p class="text-left">MEDIA SEO</p>
+                  <p class="text-left">
+                    Top 5 targeting techniques to attract customers
+                  </p>
+                  <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                </div>
               </div>
               <div class="flex-shrink-0 flex flex-col items-center text-center w-84">
-                <img class="rounded-2xl w-72" src="/src/artman2.jpg"/>
-                <p class="text-left">MEDIA SEO</p>
-                <p class="text-left">Why do project managers need to focus on strategy?</p>
-                <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                <img class="rounded-2xl w-72" src="/src/artman2.jpg" />
+                <div class="p-5">
+                  <p class="text-left">MEDIA SEO</p>
+                  <p class="text-left">
+                    Why do project managers need to focus on strategy?
+                  </p>
+                  <p class="text-left">Apr 21, 2020 | 0 Comments</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="bg-blue-950 p-5">
+          <div>
+            <div>
+              <p class="font-bold text-white">Office</p>
+              <p class="font-light text-slate-400">Germany -</p>
+              <p class="font-light text-slate-400">
+                785 15h Street, Office 478
+              </p>
+              <p class="font-light text-slate-400">Berlin, De 81566</p>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  info@email.com
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <p class="text-white mt-2 font-bold">+1 840 841 25 69</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-between mt-4">
+            <div class="flex flex-col gap-2">
+              <p class="text-white mt-2 font-bold">Links</p>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Home
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Services
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  About Us
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Our Team
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Contacts
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-white mt-2 font-bold">Socials</p>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Facebook
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Twitter
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Dribbble
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+              <span className="relative inline-block pb-1 group">
+                <span className="font-bold text-slate-400 hover:text-white transition-all duration-300 ease-out">
+                  Instagram
+                </span>
+                <span
+                  className="absolute bottom-0 text-slate-400 left-0 h-0.5 bg-current w-full 
+                  transition-all duration-300 ease-out 
+                  group-hover:w-0 group-hover:bg-white"
+                ></span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p class="text-white mt-4 font-bold">Newsletter</p>
+            <form>
+              <div class="flex flex-row gap-5 mt-5">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  class="bg-slate-400 px-12 py-3 relative z-o rounded-3xl"
+                />
+              </div>
+                {" "}
+                <button class="bg-blue-500 text-white rounded-full p-4 hover:bg-blue-900 transition-all duration-300 ease-out">
+                <FaArrowRight />
+                </button>
+              </div>
+              <div class="flex flex-row gap-5 mt-5">
+                <input type="radio" />
+                <p class="text-slate-400">
+                  I agree to the <span class="underline hover:text-white transition-all duration-300 ease-out ">Privacy Policy</span>{" "}
+                </p>
+              </div>
+            </form>
+            <div class="mt-4 text-slate-400">
+              <p>AxiomThemes © 2025. All Rights Reserved.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
   );
